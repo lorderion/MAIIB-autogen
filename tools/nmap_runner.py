@@ -1,5 +1,5 @@
 import subprocess
-from validators import ScanResult, NmapService
+from tools.validators import ScanResult, NmapService
 import json
 from pathlib import Path
 import os
