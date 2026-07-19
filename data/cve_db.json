@@ -1,0 +1,42 @@
+[
+  {
+    "cve_id": "CVE-2021-44228",
+    "service_keyword": "log4j",
+    "version_keyword": "2.",
+    "description": "Remote Code Execution via JNDI lookup in Log4j 2",
+    "severity": "Critical",
+    "recommendation": "Upgrade Log4j to 2.15.0 or later. If upgrade is not possible, set system property log4j2.formatMsgNoLookups=true."
+  },
+  {
+    "cve_id": "CVE-2024-6387",
+    "service_keyword": "openssh",
+    "version_keyword": "8.9",
+    "description": "RegreSSHion: Remote code execution in OpenSSH before 9.8p1",
+    "severity": "High",
+    "recommendation": "Update OpenSSH to version 9.8p1 or newer. As a temporary mitigation, restrict SSH access to trusted networks."
+  },
+  {
+    "cve_id": "CVE-2022-41741",
+    "service_keyword": "nginx",
+    "version_keyword": "1.22",
+    "description": "Heap buffer overflow in NGINX 1.22.x can lead to remote code execution under specific conditions",
+    "severity": "High",
+    "recommendation": "Upgrade NGINX to 1.24.0 or apply vendor patches. Disable unnecessary modules until patching."
+  },
+  {
+    "cve_id": "CVE-2023-22515",
+    "service_keyword": "confluence",
+    "version_keyword": "",
+    "description": "Pre-auth RCE in Confluence Server before 8.5.0",
+    "severity": "Critical",
+    "recommendation": "Patch immediately to the latest version. If patching is not possible, block external access to Confluence."
+  },
+  {
+    "cve_id": "CVE-2019-0708",
+    "service_keyword": "rdp",
+    "version_keyword": "",
+    "description": "BlueKeep: Remote code execution vulnerability in RDP on Windows 7/2008R2",
+    "severity": "Critical",
+    "recommendation": "Disable RDP or restrict access via firewall. Apply Microsoft patches. Consider enabling Network Level Authentication (NLA)."
+  }
+]

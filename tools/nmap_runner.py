@@ -1,8 +1,10 @@
 import subprocess
-from tools.validators import ScanResult, NmapService
 import json
-from pathlib import Path
 import os
+
+from pathlib import Path
+
+from api.schemas import ScanResult, NmapService
 
 def run_nmap(target: str, ports: str = "22,80,443") -> ScanResult:
     """
