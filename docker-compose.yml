@@ -1,0 +1,17 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: cve_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: cve_user
+      POSTGRES_PASSWORD: cve_password
+      POSTGRES_DB: cve_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+
+volumes:
+  pgdata:

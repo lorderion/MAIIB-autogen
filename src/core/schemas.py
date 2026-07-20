@@ -35,3 +35,18 @@ class AgentReport(BaseModel):
     messages: list[dict]
     final_report: Optional[str] = None
     error: Optional[str] = None
+# --------------------------------------------------- BD SCHEMAS ---------------------------------------------------
+from pydantic_settings import BaseSettings
+
+class Settings(BaseSettings):
+    DB_HOST: str = "localhost"
+    DB_PORT: int = 5432
+    DB_NAME: str = "cve_db"
+    DB_USER: str = "cve_user"
+    DB_PASSWORD: str = "cve_password"
+
+    OLLAMA_URL: str = "http://localhost:11434"
+    EMBEDDING_MODEL: str = "all-minilm"
+    EMBEDDING_DIM: int = 384
+
+settings = Settings()

@@ -4,7 +4,7 @@ import os
 
 from pathlib import Path
 
-from api.schemas import ScanResult, NmapService
+from src.core.schemas import ScanResult, NmapService
 
 def run_nmap(target: str, ports: str = "22,80,443") -> ScanResult:
     """

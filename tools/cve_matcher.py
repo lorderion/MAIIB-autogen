@@ -27,7 +27,7 @@
 import json
 from pathlib import Path
 from typing import List, Any, Dict
-from api.schemas import CVEItem, NmapService
+from src.core.schemas import CVEItem, NmapService
 
 DB_PATH = Path(__file__).parent.parent / "data" / "cve_db.json"
 

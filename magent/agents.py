@@ -4,7 +4,7 @@ from autogen_ext.models.openai import OpenAIChatCompletionClient
 from autogen_core.models import ModelInfo
 from autogen_agentchat.conditions import TextMentionTermination
 
-from config import Llama_model, Ollama_url, Gemma_model
+from src.config import Llama_model, Ollama_url, Gemma_model
 from tools.nmap_runner import run_nmap
 from tools.cve_matcher import match_cves
 

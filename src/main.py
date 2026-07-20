@@ -2,8 +2,8 @@ from fastapi import FastAPI, HTTPException
 import uvicorn
 from pydantic import ValidationError
 
-from api.schemas import ScanRequest, AgentReport
-from core.agents import run_team_pipeline
+from src.core.schemas import ScanRequest, AgentReport
+from magent.agents import run_team_pipeline
 
 app = FastAPI()
 
